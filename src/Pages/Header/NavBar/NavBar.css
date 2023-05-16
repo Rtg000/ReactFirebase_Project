@@ -1,0 +1,25 @@
+header>nav{
+    /* width: 100%; */
+    padding: 20px;
+    background-color: rgb(10, 74, 95);
+    display: flex;
+    /* flex-flow: row nowrap; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+header>nav>a{
+    width: 10%;
+    text-align: center;
+    transition: 0.4s;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+header>nav>a:hover{
+    transition: 0.4s;
+    background-color: rgb(190, 190, 190);
+}

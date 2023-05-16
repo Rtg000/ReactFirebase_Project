@@ -1,0 +1,6 @@
+export {Header} from './Pages/Header/Header'
+export {NavBar} from './Pages/Header/NavBar/NavBar'
+export {Main} from './Pages/Main/Main'
+export {Productos} from './Pages/Productos/Productos'
+export {Servicios} from './Pages/Servicios/Servicios'
+export {SobreNosotros} from './Pages/SobreNosotros/SobreNosotros'
