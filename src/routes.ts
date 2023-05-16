@@ -1,11 +1,13 @@
 // import { Main, Productos, Servicios, SobreNosotros } from './barril';
 import { Main } from "./Pages/Main/Main";
-import { Productos } from "./Pages/Productos/Productos";
 import { Servicios } from "./Pages/Servicios/Servicios";
 import { SobreNosotros } from "./Pages/SobreNosotros/SobreNosotros";
 // import { Firebase } from "./Pages/Firebase/Firebase";
 import { CategoriasPage } from "./Pages/Firebase/CategoriasPage";
 import { Home } from "./Pages/Home/Home";
+import { Torneos } from "./Pages/Torneos/Torneos";
+import Raqueta from './Img/RaquetaTennis.png';
+import Trofeo from './Img/Trofeo.png';
 
 type Componente = () => JSX.Element;
 
@@ -16,12 +18,9 @@ interface Route {
     children?: Route[]
 }
 
+
+
 export const Ruticas: Route[] = [
-    // {
-    //     path: '/',
-    //     component: Home,
-    //     name: 'Inicio'
-    // },
     {
         path: '/',
         component: Home,
@@ -33,31 +32,33 @@ export const Ruticas: Route[] = [
         name: 'Servicios'
     },
     {
-        path: 'Productos',
-        component: Productos,
-        name: 'Productos'
-    },
-    {
         path: 'SobreNosotros',
         component: SobreNosotros,
         name: 'SobreNosotros'
     },
     {
-        path: 'Categorias',
+        path: 'Torneos',
+        component: Torneos,
+        name: 'Torneos'
+    },
+    {
+        path: 'Jugadores',
         component: CategoriasPage,
-        name: 'Categorias'
+        name: 'Jugadores'
     }
 ]
 
-export const MenuInicio: Route[] = [
+export const MenuInicio = [
     {
-        path: 'SobreNosotros',
-        component: SobreNosotros,
-        name: 'Jugadores'
+        path: 'Torneos',
+        component: Torneos,
+        name: 'Torneos',
+        imagen: Trofeo
     },
     {
-        path: 'Categorias',
+        path: 'Jugadores',
         component: CategoriasPage,
-        name: 'Torneos'
+        name: 'Jugadores',
+        imagen: Raqueta
     },
 ]

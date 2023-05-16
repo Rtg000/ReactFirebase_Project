@@ -8,7 +8,8 @@ export const Home = () => {
             MenuInicio.map((route) => (
                 <NavLink
                     to={route.path}>
-                    {route.name}
+                    <p>{route.name}</p>
+                    <img src={route.imagen}/>
                 </NavLink>
             ))
             }
