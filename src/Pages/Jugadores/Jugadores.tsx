@@ -35,7 +35,7 @@ export const Jugadores = () => {
                             <p><b>Nombre: </b>{Jugador.name}</p>
                             <p><b>Edad: </b>{Jugador.edad}</p>
                             <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
-                            <p><b>Pais origen: </b>{Jugador.nacionalidad}</p>
+                            <p><b>Pais de origen: </b>{Jugador.nacionalidad}</p>
                         </div>
                         <div className="TarjetaImg">
                             <img src={Jugador.imagen}/>
@@ -55,16 +55,34 @@ export const Jugadores = () => {
                                         {...register('name')}
                                         id='nombre'
                                         label='Nombre'
-                                        type="text"
-                                        sx={{width: '80%'}}
+                                        type="string"
+                                        sx={{width: '100%'}}
                                         InputLabelProps={{}}
                                         
                                     />
                                     <TextField
-                                        // {...register('logo')} 
-                                        label='logo'
+                                        {...register('edad')} 
+                                        label='Edad'
+                                        type='number'
+                                        sx={{width: '100%'}}
+                                    />
+                                    <TextField
+                                        {...register('nacionalidad')} 
+                                        label='Pais de origen'
                                         type='string'
-                                        sx={{width: '80%'}}
+                                        sx={{width: '100%'}}
+                                    />
+                                    <TextField
+                                        {...register('gs_ganados')} 
+                                        label='Grand Slams ganados'
+                                        type='number'
+                                        sx={{width: '100%'}}
+                                    />
+                                    <TextField
+                                        {...register('imagen')} 
+                                        label='Imagen (URL)'
+                                        type='string'
+                                        sx={{width: '100%'}}
                                     />
                             </CardContent>
                             <CardActions>

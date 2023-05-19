@@ -1,6 +1,6 @@
 body{
     background-image: url(../../Img/Background.jpeg);
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(85, 85, 85);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,15 @@ main{
 }
 
 main>h1{
+    text-align: center;
     color: white;
+    font-size: 40pt;
+}
+
+main>p{
+    color: white;
+    text-align: center;
+    font-size: 16pt;
 }
 
 main>nav{
@@ -49,6 +57,10 @@ main>section{
     justify-content: space-between;
 }
 
+.MuiButtonBase-root{
+    margin-bottom: 20px;
+}
+
 .Tarjeta{
     display: flex;
     flex-flow: row nowrap;
@@ -56,7 +68,7 @@ main>section{
     align-items: center;
     justify-content: center;
     background-color: rgb(240,240,240);
-    margin: 5px;
+    margin: 10px 5px;
     padding: 10px;
     width: 30%;
     border-radius: 10px;

@@ -34,7 +34,7 @@ export const Ruticas: Route[] = [
     {
         path: 'SobreNosotros',
         component: SobreNosotros,
-        name: 'SobreNosotros'
+        name: 'Sobre Nosotros'
     },
     {
         path: 'Torneos',

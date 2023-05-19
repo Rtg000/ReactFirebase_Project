@@ -28,7 +28,7 @@
         "name": "Andy Murray",
         "edad": 35,
         "nacionalidad": "Reino Unido",
-        "gs_ganados": 4,
+        "gs_ganados": 3,
         "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/16/23/49/a-murray-full-2022-june-1.png"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Daniil Medvedev",
         "edad": 27,
         "nacionalidad": "Rusia",
-        "gs_ganados": 0,
+        "gs_ganados": 1,
         "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/05/18/21/12/medvedev-full-2022-may.png"
     },
     {
@@ -100,7 +100,7 @@
         "name": "Dominic Thiem",
         "edad": 29,
         "nacionalidad": "Austria",
-        "gs_ganados": 0,
+        "gs_ganados": 1,
         "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/12/23/02/thiem-full-2022-may.png"
     },
     {
@@ -110,5 +110,53 @@
         "nacionalidad": "Rusia",
         "gs_ganados": 0,
         "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/27/05/08/rublev-full-2022-june-final.png"
+    },
+    {
+        "id": "16",
+        "name": "Taylor Fritz",
+        "edad": 25,
+        "nacionalidad": "Estados Unidos",
+        "gs_ganados": 0,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/18/23/00/fritz-full-2022-june-1.png"
+    },
+    {
+        "id": "17",
+        "name": "Karen Kachanov",
+        "edad": 26,
+        "nacionalidad": "Rusia",
+        "gs_ganados": 0,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/16/23/51/khachanov-full-2022-june-1.png"
+    },
+    {
+        "id": "18",
+        "name": "Stan Wawrinka",
+        "edad": 38,
+        "nacionalidad": "Suiza",
+        "gs_ganados": 3,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2020/03/24/11/21/wawrinka_full_ao20.png"
+    },
+    {
+        "id": "19",
+        "name": "Alexander Zverev",
+        "edad": 26,
+        "nacionalidad": "Alemania",
+        "gs_ganados": 0,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/27/05/08/zverev-full-2022-june-final.png"
+    },
+    {
+        "id": "20",
+        "name": "Matteo Berrettini",
+        "edad": 27,
+        "nacionalidad": "Italia",
+        "gs_ganados": 0,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/06/06/08/00/berrettini-full-2022-may-second-version.png"
+    },
+    {
+        "id": "21",
+        "name": "Marin Cilic",
+        "edad": 34,
+        "nacionalidad": "Bosnia",
+        "gs_ganados": 1,
+        "imagen": "https://www.atptour.com/-/media/tennis/players/gladiator/2022/05/25/15/15/cilic-full-2022-may.png"
     }
 ]
