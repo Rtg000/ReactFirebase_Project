@@ -3,27 +3,27 @@ import { firebaseConfig } from "./FirebaseConfig";
 import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
 // import { useFirestore } from "reactfire";
 import { nanoid } from "nanoid";
-import ITorneo from "./interfaces/iTorneo";
-import torneos from './data/torneos.json'
+import IJugador from "./interfaces/iJugador";
+import jugadores from "./data/jugadores.json";
 
 export const app = initializeApp(firebaseConfig);
 
-export const addTorneo = async (data: ITorneo) => {
+export const addJugador = async (data: IJugador) => {
     try{
         // console.log("Insertando en FB el objeto: ",data)
         data.id=nanoid(20)
-        const docRef = doc(getFirestore(),"Torneos",data.id)
+        const docRef = doc(getFirestore(),"Jugadores",data.id)
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)
     }
 }
 
-export const cargarTorneos = async () => {
+export const cargarJugadores = async () => {
     try{
         console.log("Carga Datos");
-        torneos.map(async (torneo) => {
-            await newTorneo(torneo);
+        jugadores.map(async (jugador) => {
+            await newJugador(jugador);
             // console.log(torneo.name)
             // const docRef = doc(getFirestore(),"Torneos",nanoid(20));
         })
@@ -32,25 +32,25 @@ export const cargarTorneos = async () => {
     }
 }
 
-export const newTorneo = async (data: ITorneo) => {
+export const newJugador = async (data: IJugador) => {
     try{
-        const docRef = doc(getFirestore(),"Torneos",nanoid(20));
+        const docRef = doc(getFirestore(),"Jugadores",nanoid(20));
         await setDoc(docRef,data)
     }catch(error){
 
     }
 }
 
-export const getTorneos = async ():Promise<ITorneo[]> => {
-    let torneos: ITorneo[] = [];
-    const torneosRef = collection(getFirestore(), "Torneos");
-    const torneosDocs = await getDocs(torneosRef);
-    torneosDocs.forEach( doc => {
+export const getJugadores = async ():Promise<IJugador[]> => {
+    let jugadores: IJugador[] = [];
+    const jugadoresRef = collection(getFirestore(), "Jugadores");
+    const jugadoresDocs = await getDocs(jugadoresRef);
+    jugadoresDocs.forEach( doc => {
         console.log(doc.data());
         const categoria = { ...doc.data() }
         // console.log(categoria);
-        torneos.push(categoria as ITorneo)
+        jugadores.push(categoria as IJugador)
     });
-    console.log(torneos);
-    return torneos
+    console.log(jugadores);
+    return jugadores
 }

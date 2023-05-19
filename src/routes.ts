@@ -3,7 +3,7 @@ import { Main } from "./Pages/Main/Main";
 import { Servicios } from "./Pages/Servicios/Servicios";
 import { SobreNosotros } from "./Pages/SobreNosotros/SobreNosotros";
 // import { Firebase } from "./Pages/Firebase/Firebase";
-import { CategoriasPage } from "./Pages/Firebase/CategoriasPage";
+import { Jugadores } from "./Pages/Jugadores/Jugadores";
 import { Home } from "./Pages/Home/Home";
 import { Torneos } from "./Pages/Torneos/Torneos";
 import Raqueta from './Img/RaquetaTennis.png';
@@ -43,7 +43,7 @@ export const Ruticas: Route[] = [
     },
     {
         path: 'Jugadores',
-        component: CategoriasPage,
+        component: Jugadores,
         name: 'Jugadores'
     }
 ]
@@ -57,7 +57,7 @@ export const MenuInicio = [
     },
     {
         path: 'Jugadores',
-        component: CategoriasPage,
+        component: Jugadores,
         name: 'Jugadores',
         imagen: Raqueta
     },

@@ -1,49 +1,54 @@
 import { useEffect, useState } from "react";
-import { addCategoria, getCategorias } from "./FBcategorias"
-import ICategoria from "./interfaces/iCategoria";
+import { addJugador, cargarJugadores, getJugadores } from "../Firebase/FBjugadores"
+import IJugador from "../Firebase/interfaces/iJugador";
 import { Button, Card, CardActions, CardContent, CardHeader, Grid, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 
-export const CategoriasPage = () => {
-    const [categorias, setCategorias] = useState<ICategoria[]>([]);
+
+export const Jugadores = () => {
+    const [jugadores, setJugadores] = useState<IJugador[]>([]);
 
     useEffect(() => {
-        getCategorias()
+        getJugadores()
         .then(res => {
             console.log(res)
-            setCategorias(res)
+            setJugadores(res)
         })
     },[])
 
-    const { register, handleSubmit } = useForm<ICategoria>();
+    const { register, handleSubmit } = useForm<IJugador>();
     
-    const onAddCategoria = async ( dataCategoria: ICategoria ) => {
+    const onAddJugador = async ( dataJugador: IJugador ) => {
         console.log('Enviando...')
-        // console.log(dataCategoria)
-        addCategoria(dataCategoria)
+        // console.log(dataJugador)
+        addJugador(dataJugador)
     }
 
     return(
         <>
+            <Button variant="contained" onClick={cargarJugadores}>Cargar Datos</Button>
             <Grid container sx={{padding: '10px', width: '100%', display: 'flex'}}>
                 <Grid item xs={5.8} md={7} sx={{border: '0px solid red'}}>
                     <Card sx={{bgcolor: '#fef'}}>
-                        <CardHeader title='Listado de Categorias' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
+                        <CardHeader title='Listado de Jugadores' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
                         <CardContent>
-                            <ul>
-                                {
-                                categorias.map((categoria) => (
-                                    <li>{categoria.name}</li>
+                            {
+                                jugadores.map((Jugador) => (
+                                    <article>
+                                        <p><b>Nombre:</b>{Jugador.name}</p>
+                                        <p><b>Edad: </b>{Jugador.edad}</p>
+                                        <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
+                                        <p><b>Ranking máximo: </b>{Jugador.ranking_maximo}</p>
+                                    </article>
                                 ))
                                 }
-                            </ul>
                         </CardContent>
                     </Card>
                 </Grid>
                 <Grid item xs={.4} md={1}/>
                 <Grid item xs={5.8} md={4}>
                     <Card sx={{bgcolor: '#fef'}}>
-                        <form onSubmit={handleSubmit(onAddCategoria)} noValidate>
+                        <form onSubmit={handleSubmit(onAddJugador)} noValidate>
                             <CardHeader title='Inserción de Categorías' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
                             <CardContent>
                                 {/* <form> */}
@@ -64,7 +69,7 @@ export const CategoriasPage = () => {
                                     />
                             </CardContent>
                             <CardActions>
-                                <Button type='submit' color='primary' className="circular-btn" variant='contained'>Add categoria</Button>
+                                <Button type='submit' color='primary' className="circular-btn" variant='contained'>Add Jugador</Button>
                             </CardActions>
                         </form>
                     </Card>
