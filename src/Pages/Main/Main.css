@@ -51,14 +51,14 @@ main>section{
 
 .Tarjeta{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     gap: 12px;
     align-items: center;
     justify-content: center;
     background-color: rgb(240,240,240);
     margin: 10px;
     padding: 10px;
-    width: 29%;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -69,4 +69,23 @@ main>section{
 .Tarjeta>p{
     font-size: 12pt;
     margin: 0px;
+}
+
+.TarjetaInfo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* text-align: justify; */
+    width: 60%;
+}
+
+.TarjetaImg{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.TarjetaImg>img{
+    max-width: 140px;
 }

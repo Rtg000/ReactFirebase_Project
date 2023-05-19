@@ -2,7 +2,7 @@ interface IJugador {
     id: string;
     name: string;
     edad: number;
-    ranking_maximo: number;
+    nacionalidad: string;
     gs_ganados: number;
     imagen?: string;
 }

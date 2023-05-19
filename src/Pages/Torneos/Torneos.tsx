@@ -29,10 +29,14 @@ export const Torneos = () => {
             {
                 torneos.map((torneo) => (
                     <article className="Tarjeta">
-                        <p><b>Nombre:</b> {torneo.name}</p>
-                        <p><b>Puntos:</b>  {torneo.puntos}</p>
-                        <p><b>Superficie:</b> {torneo.superficie}</p>                        
-                        <img src={torneo.logo}/>   
+                        <div className="TarjetaInfo">
+                            <p><b>Nombre:</b> {torneo.name}</p>
+                            <p><b>Puntos:</b>  {torneo.puntos}</p>
+                            <p><b>Superficie:</b> {torneo.superficie}</p>   
+                        </div>
+                        <div className="TarjetaImg">
+                            <img src={torneo.logo}/>   
+                        </div>
                     </article>
                 ))
                 }

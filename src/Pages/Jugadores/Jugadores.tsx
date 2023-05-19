@@ -26,20 +26,24 @@ export const Jugadores = () => {
 
     return(
         <>
+            <Button variant="contained" onClick={cargarJugadores}>Cargar Datos</Button>
             <section>
                 {
                 jugadores.map((Jugador) => (
                     <article className="Tarjeta">
-                        <p><b>Nombre: </b>{Jugador.name}</p>
-                        <p><b>Edad: </b>{Jugador.edad}</p>
-                        <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
-                        <p><b>Ranking máximo: </b>{Jugador.ranking_maximo}</p>
-                        <img src={Jugador.imagen}/>
+                        <div className="TarjetaInfo">
+                            <p><b>Nombre: </b>{Jugador.name}</p>
+                            <p><b>Edad: </b>{Jugador.edad}</p>
+                            <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
+                            <p><b>Ranking máximo: </b>{Jugador.nacionalidad}</p>
+                        </div>
+                        <div className="TarjetaImg">
+                            <img src={Jugador.imagen}/>
+                        </div>
                     </article>
                 ))
                 }
             </section>
-            <Button variant="contained" onClick={cargarJugadores}>Cargar Datos</Button>
             <Grid container sx={{padding: '10px', width: '100%', display: 'flex'}}>
                 <Grid item xs={5.8} md={4}>
                     <Card sx={{bgcolor: '#fef'}}>
