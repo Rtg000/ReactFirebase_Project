@@ -26,26 +26,21 @@ export const Jugadores = () => {
 
     return(
         <>
+            <section>
+                {
+                jugadores.map((Jugador) => (
+                    <article className="Tarjeta">
+                        <p><b>Nombre: </b>{Jugador.name}</p>
+                        <p><b>Edad: </b>{Jugador.edad}</p>
+                        <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
+                        <p><b>Ranking máximo: </b>{Jugador.ranking_maximo}</p>
+                        <img src={Jugador.imagen}/>
+                    </article>
+                ))
+                }
+            </section>
             <Button variant="contained" onClick={cargarJugadores}>Cargar Datos</Button>
             <Grid container sx={{padding: '10px', width: '100%', display: 'flex'}}>
-                <Grid item xs={5.8} md={7} sx={{border: '0px solid red'}}>
-                    <Card sx={{bgcolor: '#fef'}}>
-                        <CardHeader title='Listado de Jugadores' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
-                        <CardContent>
-                            {
-                                jugadores.map((Jugador) => (
-                                    <article>
-                                        <p><b>Nombre: </b>{Jugador.name}</p>
-                                        <p><b>Edad: </b>{Jugador.edad}</p>
-                                        <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
-                                        <p><b>Ranking máximo: </b>{Jugador.ranking_maximo}</p>
-                                    </article>
-                                ))
-                                }
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={.4} md={1}/>
                 <Grid item xs={5.8} md={4}>
                     <Card sx={{bgcolor: '#fef'}}>
                         <form onSubmit={handleSubmit(onAddJugador)} noValidate>
