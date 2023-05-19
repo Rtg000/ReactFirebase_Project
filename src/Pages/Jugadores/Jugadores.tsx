@@ -35,7 +35,7 @@ export const Jugadores = () => {
                             <p><b>Nombre: </b>{Jugador.name}</p>
                             <p><b>Edad: </b>{Jugador.edad}</p>
                             <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
-                            <p><b>Ranking máximo: </b>{Jugador.nacionalidad}</p>
+                            <p><b>Pais origen: </b>{Jugador.nacionalidad}</p>
                         </div>
                         <div className="TarjetaImg">
                             <img src={Jugador.imagen}/>
