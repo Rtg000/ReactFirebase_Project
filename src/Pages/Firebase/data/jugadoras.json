@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "Iga Swiatek",
+        "edad": 21,
+        "nacionalidad": "Polonia",
+        "gs_ganados": 3,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2023/03/23/1688716e-271a-4fed-abc6-2dc026a5dd7f/Swiatek-Torso_326408.png?width=950"
+    },
+    {
+        "id": "2",
+        "name": "Aryna Sabalenka",
+        "edad": 25,
+        "nacionalidad": "Rusia",
+        "gs_ganados": 1,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/077d0d47-22d6-4efc-b3a9-e13ff64b0934/Sabalenka_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "3",
+        "name": "Ons Jabeur",
+        "edad": 28,
+        "nacionalidad": "Túnez",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2022/04/26/9eb71974-d255-4c9b-bc51-bd9879745126/Jabeur-Torso_316847.png?width=950"
+    },
+    {
+        "id": "4",
+        "name": "Jessica Pegula",
+        "edad": 29,
+        "nacionalidad": "Estados Unidos",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2022/04/26/b238008d-337d-4d56-80d0-2d515a83aecb/Pegula-Torso_316956.png?width=950"
+    },
+    {
+        "id": "5",
+        "name": "Caroline Garcia",
+        "edad": 29,
+        "nacionalidad": "Francia",
+        "gs_ganados": 0,
+        "imagen": "https://cdn.central.rookieme.com/wp-content/uploads/sites/5/2019/11/Caroline-Garcia.png"
+    },
+    {
+        "id": "6",
+        "name": "Coco Gauff",
+        "edad": 19,
+        "nacionalidad": "Estados Unidos",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/06/30/31c090b2-e38f-4ad2-8eee-9415aad508ee/Gauff_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "7",
+        "name": "Maria Sakkari",
+        "edad": 27,
+        "nacionalidad": "Grecia",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/07/02/64a1e097-a3fd-4f3a-8dbd-353a3317aa3d/Sakkari_Hero-Smile.png?width=950"
+    }
+]
