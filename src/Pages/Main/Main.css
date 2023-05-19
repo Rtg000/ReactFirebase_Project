@@ -1,5 +1,17 @@
+body{
+    background-image: url(../../Img/Background.jpeg);
+    background-color: rgb(95, 95, 95);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main{
     margin: 25px;
+}
+
+main>h1{
+    color: white;
 }
 
 main>nav{
@@ -33,7 +45,7 @@ main>nav>a>img{
 
 main>section{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 

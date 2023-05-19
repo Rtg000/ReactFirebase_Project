@@ -35,7 +35,7 @@ export const Jugadores = () => {
                             {
                                 jugadores.map((Jugador) => (
                                     <article>
-                                        <p><b>Nombre:</b>{Jugador.name}</p>
+                                        <p><b>Nombre: </b>{Jugador.name}</p>
                                         <p><b>Edad: </b>{Jugador.edad}</p>
                                         <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
                                         <p><b>Ranking máximo: </b>{Jugador.ranking_maximo}</p>

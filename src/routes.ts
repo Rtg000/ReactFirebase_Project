@@ -26,11 +26,11 @@ export const Ruticas: Route[] = [
         component: Home,
         name: 'Inicio' 
     },
-    {
-        path: 'Servicios',
-        component: Servicios,
-        name: 'Servicios'
-    },
+    // {
+    //     path: 'Servicios',
+    //     component: Servicios,
+    //     name: 'Servicios'
+    // },
     {
         path: 'SobreNosotros',
         component: SobreNosotros,

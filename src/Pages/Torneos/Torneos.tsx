@@ -24,7 +24,6 @@ export const Torneos = () => {
 
     return(
         <>
-            <h1>Test Torneos</h1>
             <Button variant="contained" onClick={cargarTorneos}>Cargar Datos</Button>
             <section>
             {
