@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTorneos } from "../Firebase/FBtorneos";
+import { cargar, getTorneos } from "../Firebase/FBtorneos";
 import ITorneo from "../Firebase/interfaces/iTorneo";
 import { Button, Card, CardActions, CardContent, CardHeader, Grid, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
@@ -24,13 +24,20 @@ export const Torneos = () => {
 
     return(
         <>
-            <ul>
-                {
+            <h1>Test Torneos</h1>
+            <Button variant="contained" onClick={cargar}>Cargar Datos</Button>
+            <section>
+            {
                 torneos.map((torneo) => (
-                    <li>{torneo.name}</li>
+                    <article className="Tarjeta">
+                        <p>Nombre: {torneo.name}</p>
+                        <p>Puntos: {torneo.puntos}</p>
+                        <p>Superficie: {torneo.superficie}</p>                        
+                        <img src={torneo.logo}/>   
+                    </article>
                 ))
                 }
-            </ul>
+            </section>
         </>
     )
 }

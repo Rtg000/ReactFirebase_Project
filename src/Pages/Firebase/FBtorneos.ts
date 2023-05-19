@@ -4,6 +4,7 @@ import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firesto
 // import { useFirestore } from "reactfire";
 import { nanoid } from "nanoid";
 import ITorneo from "./interfaces/iTorneo";
+import torneos from './data/torneos.json'
 
 export const app = initializeApp(firebaseConfig);
 
@@ -15,6 +16,28 @@ export const addTorneo = async (data: ITorneo) => {
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)
+    }
+}
+
+export const cargar = async () => {
+    try{
+        console.log("Carga Datos");
+        torneos.map(async (torneo) => {
+            await newTorneo(torneo);
+            // console.log(torneo.name)
+            // const docRef = doc(getFirestore(),"Torneos",nanoid(20));
+        })
+    }catch(error){
+        console.log(error)
+    }
+}
+
+export const newTorneo = async (data: ITorneo) => {
+    try{
+        const docRef = doc(getFirestore(),"Torneos",nanoid(20));
+        await setDoc(docRef,data)
+    }catch(error){
+
     }
 }
 

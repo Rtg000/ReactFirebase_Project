@@ -1,7 +1,7 @@
 interface ITorneo {
     id: string;
     name: string;
-    tipo: string;
+    puntos: number;
     superficie: string;
     logo?: string;
 }

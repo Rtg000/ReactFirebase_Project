@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "name": "Roland Garros",
+        "puntos": 2000,
+        "superficie": "Tierra Batida",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Logo_Roland-Garros.svg/1200px-Logo_Roland-Garros.svg.png"
+    },
+    {
+        "id": "2",
+        "name": "Wimbledon",
+        "puntos": 2000,
+        "superficie": "Césped",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/b9/Wimbledon.svg"
+    },
+    {
+        "id": "3",
+        "name": "US Open",
+        "puntos": 2000,
+        "superficie": "Dura",
+        "logo": "https://www.mobisportconcept.com/wp-content/uploads/2023/02/us-open-Official-supp.png"
+    },
+    {
+        "id": "4",
+        "name": "Australian Open",
+        "puntos": 2000,
+        "superficie": "Dura",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Australian_Open_Logo_2017.svg/1200px-Australian_Open_Logo_2017.svg.png"
+    }
+]
+
