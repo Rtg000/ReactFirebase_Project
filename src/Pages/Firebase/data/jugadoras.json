@@ -54,5 +54,117 @@
         "nacionalidad": "Grecia",
         "gs_ganados": 0,
         "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/07/02/64a1e097-a3fd-4f3a-8dbd-353a3317aa3d/Sakkari_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "8",
+        "name": "Elena Rybakina",
+        "edad": 23,
+        "nacionalidad": "Kazakhstan",
+        "gs_ganados": 1,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/07/02/14267b45-e3d1-4b43-bdda-fce6e82312c7/Rybakina_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "9",
+        "name": "Daria Kasatkina",
+        "edad": 26,
+        "nacionalidad": "Rusia",
+        "gs_ganados": 0,
+        "imagen": "https://images.prismic.io/fft-rg-site/45777401-3e3b-459c-98d9-dc54f00547e9_20190306_PJ_KasatkinaDaria_US.png?auto=compress,format&rect=0,0,1080,1080&w=400&h=400"
+    },
+    {
+        "id": "10",
+        "name": "Petra Kvitoca",
+        "edad": 33,
+        "nacionalidad": "República Checa",
+        "gs_ganados": 2,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/1dfdc52b-00e3-471e-8940-3fa228a32117/Kvitova_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "11",
+        "name": "Veronika Kudermetova",
+        "edad": 26,
+        "nacionalidad": "Rusia",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/07/13/e5b30284-8aa3-4480-8f8a-b437210d93b2/Kudermetova_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "12",
+        "name": "Belinda Bencic",
+        "edad": 26,
+        "nacionalidad": "Suiza",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/88798690-26c2-4a72-9692-e24a2353479e/Bencic_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "13",
+        "name": "Jelena Ostapenko",
+        "edad": 25,
+        "nacionalidad": "Letonia",
+        "gs_ganados": 1,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/ea8d6745-d55a-46b8-871e-aa2e463ec822/Ostapenko_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "14",
+        "name": "Victoria Azarenka",
+        "edad": 33,
+        "nacionalidad": "Rusia",
+        "gs_ganados": 2,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2019/10/08/1ab771d9-a81c-4f8d-9e1e-195dd12828b2/dqJqbgIh.png?width=950"
+    },
+    {
+        "id": "15",
+        "name": "Madison Keys",
+        "edad": 28,
+        "nacionalidad": "Estados Unidos",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/eee9f472-e720-4c71-862c-048f2fadacfb/Keys_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "16",
+        "name": "Madison Keys",
+        "edad": 28,
+        "nacionalidad": "Estados Unidos",
+        "gs_ganados": 2,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/eee9f472-e720-4c71-862c-048f2fadacfb/Keys_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "17",
+        "name": "Magda Linette",
+        "edad": 31,
+        "nacionalidad": "Polonia",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2019/10/08/3855e9f4-85b4-4799-be64-54393146eeac/AcblzpDP.png?width=950"
+    },
+    {
+        "id": "18",
+        "name": "Paula Badosa",
+        "edad": 25,
+        "nacionalidad": "España",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2022/04/26/db8722c1-d51b-4f2d-a23e-3396b205f242/Badosa-Torso_320124.png?width=950"
+    },
+    {
+        "id": "19",
+        "name": "Karolina Pliskova",
+        "edad": 31,
+        "nacionalidad": "República Checa",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/d2107552-9555-4c17-9eab-6361b940905e/Pliskova_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "20",
+        "name": "Donna Vekic",
+        "edad": 26,
+        "nacionalidad": "Croacia",
+        "gs_ganados": 0,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2020/09/30/3917b0e4-f640-4e3d-b7db-b554a2d0bf60/Vekic_Hero-Smile.png?width=950"
+    },
+    {
+        "id": "21",
+        "name": "Simona Halep",
+        "edad": 31,
+        "nacionalidad": "Rumanía",
+        "gs_ganados": 2,
+        "imagen": "https://photoresources.wtatennis.com/photo-resources/2022/05/02/5335bd11-72d6-410c-a17d-1d058ee98fa9/Halep-Torso_314320.png?width=950"
     }
 ]

@@ -8,6 +8,7 @@ import { Home } from "./Pages/Home/Home";
 import { Torneos } from "./Pages/Torneos/Torneos";
 import Raqueta from './Img/RaquetaTennis.png';
 import Trofeo from './Img/Trofeo.png';
+import { Jugadoras } from "./Pages/Jugadoras/Jugadoras";
 
 type Componente = () => JSX.Element;
 
@@ -45,6 +46,11 @@ export const Ruticas: Route[] = [
         path: 'Jugadores',
         component: Jugadores,
         name: 'Jugadores'
+    },
+    {
+        path: 'Jugadoras',
+        component: Jugadoras,
+        name: 'Jugadoras'
     }
 ]
 

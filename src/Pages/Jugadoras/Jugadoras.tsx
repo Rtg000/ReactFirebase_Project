@@ -1,44 +1,44 @@
 import { useEffect, useState } from "react";
-import { addJugador, cargarJugadores, getJugadores } from "../Firebase/FBjugadores"
-import IJugador from "../Firebase/interfaces/iJugador";
+import { addJugadora, cargarJugadoras, getJugadoras } from "../Firebase/FBjugadoras"
+import IJugadora from "../Firebase/interfaces/iJugadora";
 import { Button, Card, CardActions, CardContent, CardHeader, Grid, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 
 
-export const Jugadores = () => {
-    const [jugadores, setJugadores] = useState<IJugador[]>([]);
+export const Jugadoras = () => {
+    const [jugadoras, setJugadoras] = useState<IJugadora[]>([]);
 
     useEffect(() => {
-        getJugadores()
+        getJugadoras()
         .then(res => {
             console.log(res)
-            setJugadores(res)
+            setJugadoras(res)
         })
     },[])
 
-    const { register, handleSubmit } = useForm<IJugador>();
+    const { register, handleSubmit } = useForm<IJugadora>();
     
-    const onAddJugador = async ( dataJugador: IJugador ) => {
+    const onAddJugadora = async ( dataJugador: IJugadora ) => {
         console.log('Enviando...')
         // console.log(dataJugador)
-        addJugador(dataJugador)
+        addJugadora(dataJugador)
     }
 
     return(
         <>
-            <Button variant="contained" onClick={cargarJugadores}>Cargar Datos</Button>
+            <Button variant="contained" onClick={cargarJugadoras}>Cargar Datos</Button>
             <section>
                 {
-                jugadores.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((Jugador) => (
+                jugadoras.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((Jugadora) => (
                     <article className="Tarjeta">
                         <div className="TarjetaInfo">
-                            <p><b>Nombre: </b>{Jugador.name}</p>
-                            <p><b>Edad: </b>{Jugador.edad}</p>
-                            <p><b>Grand Slams ganados: </b>{Jugador.gs_ganados}</p>
-                            <p><b>Pais de origen: </b>{Jugador.nacionalidad}</p>
+                            <p><b>Nombre: </b>{Jugadora.name}</p>
+                            <p><b>Edad: </b>{Jugadora.edad}</p>
+                            <p><b>Grand Slams ganados: </b>{Jugadora.gs_ganados}</p>
+                            <p><b>Pais de origen: </b>{Jugadora.nacionalidad}</p>
                         </div>
                         <div className="TarjetaImg">
-                            <img src={Jugador.imagen}/>
+                            <img src={Jugadora.imagen}/>
                         </div>
                     </article>
                 ))
@@ -47,7 +47,7 @@ export const Jugadores = () => {
             <Grid container sx={{padding: '10px', width: '100%', display: 'flex'}}>
                 <Grid item xs={5.8} md={4}>
                     <Card sx={{bgcolor: '#fef'}}>
-                        <form onSubmit={handleSubmit(onAddJugador)} noValidate>
+                        <form onSubmit={handleSubmit(onAddJugadora)} noValidate>
                             <CardHeader title='Inserción de Categorías' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
                             <CardContent>
                                 {/* <form> */}
