@@ -36,15 +36,15 @@
     },
     {
         "id": "6",
-        "name": "Rome Open",
+        "name": "Rome Masters",
         "puntos": 1000,
         "superficie": "Tierra Batida",
-        "logo": "https://e7.pngegg.com/pngimages/804/389/png-clipart-2017-italian-open-logo-font-brand-atp-de-roma-2017-italian-open-logo-thumbnail.png"
+        "logo": "https://storage.allsportdb.com/orig/event/56b8e771-159a-4a56-bf43-54fe67280358"
     },
     {
         "id": "7",
         "name": "Barcelona Open",
-        "puntos": 1000,
+        "puntos": 500,
         "superficie": "Dura",
         "logo": "https://solsonacomunicacion.com/wp-content/uploads/2021/11/ATP-Barcelona.jpg"
     },
@@ -64,14 +64,14 @@
     },
     {
         "id": "10",
-        "name": "Warsaw Open",
-        "puntos": 500,
-        "superficie": "Dura",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/2/2e/Polsat_Warsaw_Open_logo.jpg"
+        "name": "Argentina Open",
+        "puntos": 250,
+        "superficie": "Tierra Batida",
+        "logo": "https://pbs.twimg.com/profile_images/1605051177766354947/5sFsTFyj_400x400.jpg"
     },
     {
         "id": "11",
-        "name": "Monte-Carlo Open",
+        "name": "Monte-Carlo Masters",
         "puntos": 1000,
         "superficie": "Tierra Batida",
         "logo": "https://gumlet.assettype.com/afaqs%2Fimport%2Fall%2Fnews%2Fimages%2Fnews_story_grfx%2F2018%2F06%2F53168%2FMonte%20Carlo%20old%20logo.jpg?auto=format%2Ccompress&w=1200"
@@ -82,6 +82,69 @@
         "puntos": 1000,
         "superficie": "Dura",
         "logo": "https://upload.wikimedia.org/wikipedia/en/5/52/Miami_Open_Logo.jpg"
+    },
+    {
+        "id": "13",
+        "name": "Astana Open",
+        "puntos": 250,
+        "superficie": "Dura",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/5/52/Miami_Open_Logo.jpg"
+    },
+    {
+        "id": "14",
+        "name": "Rolex Paris Masters",
+        "puntos": 1000,
+        "superficie": "Dura",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/b/b2/Rolex_Paris_Masters_tournament_logo.jpg"
+    },
+    {
+        "id": "15",
+        "name": "Geneva Open",
+        "puntos": 250,
+        "superficie": "Tierra Batida",
+        "logo": "https://www.lesarmures.ch/wp-content/uploads/2021/05/ggo4-653x501.jpg"
+    },
+    {
+        "id": "16",
+        "name": "Hamburg European Open",
+        "puntos": 500,
+        "superficie": "Tierra Batida",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Hamburg_Open_logo.png"
+    },
+    {
+        "id": "17",
+        "name": "Citi Open",
+        "puntos": 1000,
+        "superficie": "Césped",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citi_Open_Logo.svg/1024px-Citi_Open_Logo.svg.png"
+    },
+    {
+        "id": "18",
+        "name": "Atlanta Open",
+        "puntos": 250,
+        "superficie": "Dura",
+        "logo": "https://www.atlantaopentennis.com/-/media/sites/tournaments/atlanta/logos/ao23_stacked.png"
+    },
+    {
+        "id": "19",
+        "name": "National Bank Open",
+        "puntos": 1000,
+        "superficie": "Dura",
+        "logo": "https://nationalbankopen.com/wp-content/uploads/2021/08/NBO-Official-ENG-Positif-RGB-scaled.jpg"
+    },
+    {
+        "id": "20",
+        "name": "Western & Southern Open",
+        "puntos": 1000,
+        "superficie": "Dura",
+        "logo": "https://wsopen.com/wp-content/uploads/2023/03/WS-Open-Logo-RGB.png"
+    },
+    {
+        "id": "21",
+        "name": "Rio Open",
+        "puntos": 1000,
+        "superficie": "Tierra Batida",
+        "logo": "https://mir-s3-cdn-cf.behance.net/projects/404/93973a97574553.Y3JvcCwxMDQzLDgxNSwwLDY0.png"
     }
 ]
 
