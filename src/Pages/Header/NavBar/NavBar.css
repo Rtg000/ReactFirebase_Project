@@ -1,25 +1,72 @@
 header>nav{
     /* width: 100%; */
     padding: 20px;
-    background-color: rgb(38, 176, 223);
+    background-color: rgb(39, 183, 231);
     display: flex;
     /* flex-flow: row nowrap; */
     align-items: center;
     justify-content: space-around;
+    height: 200px;
+    max-height: 100px;
 }
 
 header>nav>a{
-    width: 10%;
+    width: 11%;
     text-align: center;
-    transition: 0.4s;
+    /* transition: 0.4s; */
     padding: 25px;
     text-decoration: none;
     color: black;
-    background-color: rgb(240, 240, 240);
-    border-radius: 10px;
+    /* background-color: rgb(240, 240, 240); */
+    /* border-radius: 10px; */
+    font-weight: bold;
+    font-size: 13pt;
 }
 
 header>nav>a:hover{
-    transition: 0.4s;
-    background-color: rgb(190, 190, 190);
+    /* transition: 0.4s; */
+    border-bottom: 4px solid rgb(223, 230, 230);
+}
+
+.active{
+    border-bottom: 4px solid rgb(230, 230, 230);
+}
+
+.FormLogin{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-flow: column nowrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240,240,240);
+    margin: 10px 5px;
+    padding: 30px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#ButtonLogin{
+    width: 60%;
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+    header>nav{
+        padding: 0px;
+        max-height: 110px;
+    }
+    header>nav>a{
+        font-size: 11pt;
+        padding: 20px 7px;
+        width: 16%;
+    }
+    header>nav>a:hover{
+        /* transition: 0.4s; */
+        border-bottom: 3px solid rgb(223, 230, 230);
+    }
+    
+    .active{
+        border-bottom: 3px solid rgb(230, 230, 230);
+    }
 }

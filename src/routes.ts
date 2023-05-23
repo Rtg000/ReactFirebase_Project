@@ -9,6 +9,8 @@ import { Torneos } from "./Pages/Torneos/Torneos";
 import Raqueta from './Img/RaquetaTennis.png';
 import Trofeo from './Img/Trofeo.png';
 import { Jugadoras } from "./Pages/Jugadoras/Jugadoras";
+import { Login } from "./Pages/Header/Login/Login";
+import { ListadoBruto } from "./Pages/ListadoBruto/ListadoBruto";
 
 type Componente = () => JSX.Element;
 
@@ -51,6 +53,11 @@ export const Ruticas: Route[] = [
         path: 'Jugadoras',
         component: Jugadoras,
         name: 'Jugadoras'
+    },
+    {
+        path: 'Login',
+        component: Login,
+        name: 'Login'
     }
 ]
 
@@ -67,4 +74,18 @@ export const MenuInicio = [
         name: 'Jugadores',
         imagen: Raqueta
     },
+    {
+        path: 'Jugadoras',
+        component: Jugadoras,
+        name: 'Jugadoras',
+        imagen: Raqueta
+    }
+]
+
+export const ListadoB = [
+    {
+        path: 'ListadoBruto',
+        component: ListadoBruto,
+        name: 'ListadoBruto',
+    }
 ]
