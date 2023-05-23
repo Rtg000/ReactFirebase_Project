@@ -27,7 +27,7 @@ export const Torneos = () => {
             <Button variant="contained" onClick={cargarTorneos}>Cargar Datos</Button>
             <section>
             {
-                torneos.map((torneo) => (
+                torneos.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((torneo) => (
                     <article className="Tarjeta">
                         <div className="TarjetaInfo">
                             <p><b>Nombre:</b> {torneo.name}</p>
@@ -35,7 +35,7 @@ export const Torneos = () => {
                             <p><b>Superficie:</b> {torneo.superficie}</p>   
                         </div>
                         <div className="TarjetaImg">
-                            <img src={torneo.logo}/>   
+                            <img className="ImgTorneos" src={torneo.logo}/>   
                         </div>
                     </article>
                 ))

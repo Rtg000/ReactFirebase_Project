@@ -98,9 +98,18 @@ main>section{
     width: 40%;
 }
 
-.TarjetaImg>img{
+.TarjetaImg>.ImgTorneos{
+    max-width: 160px;
+}
+
+.TarjetaImg>.ImgJugadores{
     max-width: 150px;
 }
+
+.TarjetaImg>.ImgJugadoras{
+    max-width: 230px;
+}
+
 
 @media (min-width: 0px) and (max-width: 1200px) {
     .Tarjeta{

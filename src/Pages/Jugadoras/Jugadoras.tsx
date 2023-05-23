@@ -38,7 +38,7 @@ export const Jugadoras = () => {
                             <p><b>Pais de origen: </b>{Jugadora.nacionalidad}</p>
                         </div>
                         <div className="TarjetaImg">
-                            <img src={Jugadora.imagen}/>
+                            <img className="ImgJugadoras" src={Jugadora.imagen}/>
                         </div>
                     </article>
                 ))
