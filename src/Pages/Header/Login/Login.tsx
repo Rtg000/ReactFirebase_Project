@@ -7,8 +7,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 export const Login = () => {
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-        let path = ``
-        navigate(path);
+        navigate('/ListadoBruto');
     }
 
     return(

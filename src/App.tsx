@@ -6,13 +6,14 @@ import { Header, Main } from './barril';
 // import { Main } from './Pages/Main/Main';
 import { Ruticas } from './routes';
 import {Route,Routes} from 'react-router-dom'
+import { ListadoBruto } from './Pages/ListadoBruto/ListadoBruto';
 
 function App() {
   return (
     <>
       <Header/>
       <Routes>
-        <Route path='/' element={<Main></Main>}>
+        <Route path='/' element={<Main/>}>
           {
             Ruticas.map((route) => (
               <Route
@@ -22,6 +23,7 @@ function App() {
               />
             ))
           }
+          <Route path='/ListadoBruto' element={<ListadoBruto/>}/>
         </Route>
       </Routes>
     </>
