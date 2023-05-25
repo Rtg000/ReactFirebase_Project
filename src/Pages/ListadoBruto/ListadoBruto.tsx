@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import IJugador from "../Firebase/interfaces/iJugador";
 import { getJugadores } from "../Firebase/FBjugadores";
 import './ListadoBruto.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimesCircle, faPen, faPenSquare, faTimesSquare } from "@fortawesome/free-solid-svg-icons";
+
 
 export const ListadoBruto = () => {
 
@@ -31,12 +34,14 @@ export const ListadoBruto = () => {
             {
             jugadores.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((Jugador) => (
                 <tr className="FilaCrud">
-                    <td>{Jugador.id}</td>
-                    <td>{Jugador.name}</td>
-                    <td>{Jugador.edad}</td>
-                    <td>{Jugador.gs_ganados}</td>
-                    <td>{Jugador.nacionalidad}</td>
-                    <td>{Jugador.imagen}</td> 
+                    <td className="td_PrimeraColumna">{Jugador.id}</td>
+                    <td className="td_SegundaColumna">{Jugador.name}</td>
+                    <td className="td_TerceraColumna">{Jugador.edad}</td>
+                    <td className="td_CuartaColumna">{Jugador.gs_ganados}</td>
+                    <td className="td_QuintaColumna">{Jugador.nacionalidad}</td>
+                    <td className="td_SextaColumna"><img src={Jugador.imagen}/></td> 
+                    <td className="td_SeptimaColumna"><FontAwesomeIcon icon={faPenSquare} size="4x" style={{color: "#0d6dff"}}/></td>
+                    <td className="td_OctavaColumna"><FontAwesomeIcon icon={faTimesSquare} size="4x" style={{color: "#0d6dff"}} /></td>
                 </tr>
             ))
             }

@@ -19,25 +19,50 @@ td{
 }
 
 .td_PrimeraColumna{
-    width: 5%;
+    width: 7%;
 }
 
 .td_SegundaColumna{
-    width: 15%;
+    width: 25%;
 }
 
 .td_TerceraColumna{
-    width: 5%;
+    width: 8%;
 }
 
 .td_CuartaColumna{
-    width: 5%;
-}
-
-.td_QuintaColumna{
     width: 10%;
 }
 
+.td_QuintaColumna{
+    width: 20%;
+}
+
 .td_SextaColumna{
-    width: 60%;
+    width: 10%;
+    /* padding: 3px; */
+}
+
+.td_SeptimaColumna{
+    width: 10%;
+}
+
+.td_OctavaColumna{
+    width: 10%;
+}
+
+td>img{
+    width: 50px;
+    /* height: 80px; */
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+    td>img{
+        width: 40px;
+        /* height: 80px; */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+
 }
