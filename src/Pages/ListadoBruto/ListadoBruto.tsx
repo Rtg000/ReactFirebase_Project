@@ -40,8 +40,8 @@ export const ListadoBruto = () => {
                     <td className="td_CuartaColumna">{Jugador.gs_ganados}</td>
                     <td className="td_QuintaColumna">{Jugador.nacionalidad}</td>
                     <td className="td_SextaColumna"><img src={Jugador.imagen}/></td> 
-                    <td className="td_SeptimaColumna"><FontAwesomeIcon icon={faPenSquare} size="4x" style={{color: "#0d6dff"}}/></td>
-                    <td className="td_OctavaColumna"><FontAwesomeIcon icon={faTimesSquare} size="4x" style={{color: "#0d6dff"}} /></td>
+                    <td className="td_SeptimaColumna"><FontAwesomeIcon icon={faPenSquare} size="3x" style={{color: "#0d6dff"}}/></td>
+                    <td className="td_OctavaColumna"><FontAwesomeIcon icon={faTimesSquare} size="3x" style={{color: "#0d6dff"}} /></td>
                 </tr>
             ))
             }

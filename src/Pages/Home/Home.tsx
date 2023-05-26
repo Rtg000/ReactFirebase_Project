@@ -3,7 +3,8 @@ import { MenuInicio } from "../../routes"
 
 export const Home = () => {
     return(
-        <nav>
+        <section>
+                    <nav>
             {
             MenuInicio.map((route) => (
                 <NavLink
@@ -14,5 +15,6 @@ export const Home = () => {
             ))
             }
         </nav>
+        </section>
     )
 }

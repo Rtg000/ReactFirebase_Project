@@ -10,9 +10,7 @@ export const app = initializeApp(firebaseConfig);
 
 export const addTorneo = async (data: ITorneo) => {
     try{
-        // console.log("Insertando en FB el objeto: ",data)
-        data.id=nanoid(20)
-        const docRef = doc(getFirestore(),"Torneos",data.id)
+        const docRef = doc(getFirestore(),"Torneos",nanoid(20));
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)
@@ -23,21 +21,12 @@ export const cargarTorneos = async () => {
     try{
         console.log("Carga Datos");
         torneos.map(async (torneo) => {
-            await newTorneo(torneo);
+            await addTorneo(torneo);
             // console.log(torneo.name)
             // const docRef = doc(getFirestore(),"Torneos",nanoid(20));
         })
     }catch(error){
         console.log(error)
-    }
-}
-
-export const newTorneo = async (data: ITorneo) => {
-    try{
-        const docRef = doc(getFirestore(),"Torneos",nanoid(20));
-        await setDoc(docRef,data)
-    }catch(error){
-
     }
 }
 

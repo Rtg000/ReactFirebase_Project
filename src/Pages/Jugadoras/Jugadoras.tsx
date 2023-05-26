@@ -26,7 +26,8 @@ export const Jugadoras = () => {
 
     return(
         <>
-            <Button variant="contained" onClick={cargarJugadoras}>Cargar Datos</Button>
+            <Button variant="contained" onClick={cargarJugadoras}>Cargar datos</Button>
+            {/* <button className="BotonCargarDatos" onClick={cargarJugadoras}>CARGAR DATOS</button> */}
             <section>
                 {
                 jugadoras.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((Jugadora) => (

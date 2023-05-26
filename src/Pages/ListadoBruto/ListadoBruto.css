@@ -39,6 +39,7 @@ td{
 }
 
 .td_SextaColumna{
+    justify-content: center;
     width: 10%;
     /* padding: 3px; */
 }
@@ -52,6 +53,9 @@ td{
 }
 
 td>img{
+    display: flex;
+    justify-self: center;
+    align-self: center;
     width: 50px;
     /* height: 80px; */
 }

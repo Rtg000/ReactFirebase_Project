@@ -10,9 +10,7 @@ export const app = initializeApp(firebaseConfig);
 
 export const addJugador = async (data: IJugador) => {
     try{
-        // console.log("Insertando en FB el objeto: ",data)
-        data.id=nanoid(20)
-        const docRef = doc(getFirestore(),"Jugadores",data.id)
+        const docRef = doc(getFirestore(),"Jugadores",nanoid(20));
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)
@@ -23,21 +21,12 @@ export const cargarJugadores = async () => {
     try{
         console.log("Carga Datos");
         jugadores.map(async (jugador) => {
-            await newJugador(jugador);
+            await addJugador(jugador);
             // console.log(torneo.name)
             // const docRef = doc(getFirestore(),"Torneos",nanoid(20));
         })
     }catch(error){
         console.log(error)
-    }
-}
-
-export const newJugador = async (data: IJugador) => {
-    try{
-        const docRef = doc(getFirestore(),"Jugadores",nanoid(20));
-        await setDoc(docRef,data)
-    }catch(error){
-
     }
 }
 
@@ -54,3 +43,11 @@ export const getJugadores = async ():Promise<IJugador[]> => {
     console.log(jugadores);
     return jugadores
 }
+
+// export const borrarJugador = async () => {
+//     try{
+//         jugadores.map(async(jugador) => {
+            
+//         })
+//     }
+// }
