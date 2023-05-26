@@ -23,8 +23,8 @@ function App() {
               />
             ))
           }
-          <Route path='/ListadoBruto' element={<ListadoBruto/>}/>
         </Route>
+        <Route path='/ListadoBruto' element={<ListadoBruto/>}/>
       </Routes>
     </>
   );

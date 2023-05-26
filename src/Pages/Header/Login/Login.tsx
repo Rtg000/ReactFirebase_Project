@@ -1,5 +1,5 @@
 import { Button, List, TextField } from "@mui/material"
-import { ListadoB, Ruticas } from "../../../routes"
+import { Ruticas } from "../../../routes"
 import path from "path"
 import { ListadoBruto } from "../../ListadoBruto/ListadoBruto"
 import { NavLink, useNavigate } from "react-router-dom";

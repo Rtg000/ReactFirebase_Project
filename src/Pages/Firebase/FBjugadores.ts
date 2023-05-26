@@ -1,12 +1,14 @@
 import { initializeApp } from "firebase/app"
 import { firebaseConfig } from "./FirebaseConfig";
-import { collection, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, getFirestore, setDoc } from "firebase/firestore";
 // import { useFirestore } from "reactfire";
 import { nanoid } from "nanoid";
 import IJugador from "./interfaces/iJugador";
 import jugadores from "./data/jugadores.json";
 
 export const app = initializeApp(firebaseConfig);
+
+export const db=getFirestore();
 
 export const addJugador = async (data: IJugador) => {
     try{
@@ -37,17 +39,32 @@ export const getJugadores = async ():Promise<IJugador[]> => {
     jugadoresDocs.forEach( doc => {
         console.log(doc.data());
         const categoria = { ...doc.data() }
-        // console.log(categoria);
         jugadores.push(categoria as IJugador)
     });
     console.log(jugadores);
     return jugadores
 }
 
+export const id=nanoid(20);
+
 // export const borrarJugador = async () => {
 //     try{
-//         jugadores.map(async(jugador) => {
-            
-//         })
+//         console.log("Test Borrado")
+//         const docRef = doc(getFirestore(),"Jugadores",id);
+//         await deleteDoc(docRef)
+//     }catch(error){
+//         console.log(error)
 //     }
 // }
+
+export const borrarJugador = async (id: string) => {
+    try{
+        console.log("TestBorrado")
+        // const docRef = doc(getFirestore(),"Jugadores",id);
+        const docRef = doc(getFirestore(),"Jugadores",id);
+        await deleteDoc(docRef);
+        window.location.reload();
+    }catch(error){
+        console.log(error)
+    }
+}

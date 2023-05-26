@@ -1,7 +1,7 @@
 import { table } from "console"
 import { useEffect, useState } from "react";
 import IJugador from "../Firebase/interfaces/iJugador";
-import { getJugadores } from "../Firebase/FBjugadores";
+import { borrarJugador, getJugadores, id } from "../Firebase/FBjugadores";
 import './ListadoBruto.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle, faPen, faPenSquare, faTimesSquare } from "@fortawesome/free-solid-svg-icons";
@@ -41,7 +41,8 @@ export const ListadoBruto = () => {
                     <td className="td_QuintaColumna">{Jugador.nacionalidad}</td>
                     <td className="td_SextaColumna"><img src={Jugador.imagen}/></td> 
                     <td className="td_SeptimaColumna"><FontAwesomeIcon icon={faPenSquare} size="3x" style={{color: "#0d6dff"}}/></td>
-                    <td className="td_OctavaColumna"><FontAwesomeIcon icon={faTimesSquare} size="3x" style={{color: "#0d6dff"}} /></td>
+                    <td className="td_OctavaColumna"><button onClick={() => borrarJugador(Jugador.id)}><FontAwesomeIcon icon={faTimesSquare} size="3x" style={{color: "#0d6dff"}}/></button></td>
+                    {/* <td className="td_OctavaColumna"><button onClick={borrarJugador}><FontAwesomeIcon icon={faTimesSquare} size="3x" style={{color: "#0d6dff"}}/></button></td> */}
                 </tr>
             ))
             }

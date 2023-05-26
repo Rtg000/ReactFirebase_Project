@@ -10,7 +10,7 @@ import Raqueta from './Img/RaquetaTennis.png';
 import Trofeo from './Img/Trofeo.png';
 import { Jugadoras } from "./Pages/Jugadoras/Jugadoras";
 import { Login } from "./Pages/Header/Login/Login";
-import { ListadoBruto } from "./Pages/ListadoBruto/ListadoBruto";
+// import { ListadoBruto } from "./Pages/ListadoBruto/ListadoBruto";
 
 type Componente = () => JSX.Element;
 
@@ -82,10 +82,10 @@ export const MenuInicio = [
     }
 ]
 
-export const ListadoB = [
-    {
-        path: 'ListadoBruto',
-        component: ListadoBruto,
-        name: 'ListadoBruto',
-    }
-]
+// export const ListadoB = [
+//     {
+//         path: 'ListadoBruto',
+//         component: ListadoBruto,
+//         name: 'ListadoBruto',
+//     }
+// ]
