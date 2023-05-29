@@ -41,8 +41,8 @@ export const ListadoBruto = () => {
                     <td className="td_QuintaColumna">{Jugador.nacionalidad}</td>
                     <td className="td_SextaColumna"><img src={Jugador.imagen}/></td> 
                     <td className="td_SeptimaColumna"><FontAwesomeIcon icon={faPenSquare} size="2x" style={{color: "#0d6dff"}}/></td>
-                    <td className="td_OctavaColumna"><button onClick={() => borrarJugador(Jugador.id)}><FontAwesomeIcon icon={faTimesSquare} size="2x" style={{color: "#0d6dff"}}/></button></td>
-                    {/* <td className="td_OctavaColumna"><button onClick={borrarJugador}><FontAwesomeIcon icon={faTimesSquare} size="3x" style={{color: "#0d6dff"}}/></button></td> */}
+                    {/* <td className="td_OctavaColumna"><button onClick={() => borrarJugador(Jugador.id)}><FontAwesomeIcon icon={faTimesSquare} size="2x" style={{color: "#0d6dff"}}/></button></td> */}
+                    <td className="td_OctavaColumna"><FontAwesomeIcon onClick={() => borrarJugador(Jugador.id)} icon={faTimesSquare} size="2x" style={{color: "#0d6dff"}}/></td>
                 </tr>
             ))
             }
