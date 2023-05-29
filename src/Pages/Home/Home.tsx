@@ -4,7 +4,7 @@ import { MenuInicio } from "../../routes"
 export const Home = () => {
     return(
         <section>
-                    <nav>
+        <nav>
             {
             MenuInicio.map((route) => (
                 <NavLink

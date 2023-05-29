@@ -23,7 +23,11 @@ header>nav>a{
     font-size: 13pt;
 }
 
-header>nav>a:hover{
+header>nav>a>img{
+    max-width: 175px;
+}
+
+header>nav>a:hover:not(#Inicio){
     /* transition: 0.4s; */
     border-bottom: 4px solid rgb(223, 230, 230);
 }
@@ -64,6 +68,9 @@ header>nav>a:hover{
     header>nav>a:hover{
         /* transition: 0.4s; */
         border-bottom: 3px solid rgb(223, 230, 230);
+    }
+    header>nav>a>img{
+        width: 100px;
     }
     
     .active{

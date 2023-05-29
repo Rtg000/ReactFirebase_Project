@@ -24,15 +24,10 @@ interface Route {
 
 
 export const Ruticas: Route[] = [
-    {
-        path: '/',
-        component: Home,
-        name: 'Inicio' 
-    },
     // {
-    //     path: 'Servicios',
-    //     component: Servicios,
-    //     name: 'Servicios'
+    //     path: '/',
+    //     component: Home,
+    //     name: 'Inicio' 
     // },
     {
         path: 'SobreNosotros',
@@ -81,11 +76,3 @@ export const MenuInicio = [
         imagen: Raqueta
     }
 ]
-
-// export const ListadoB = [
-//     {
-//         path: 'ListadoBruto',
-//         component: ListadoBruto,
-//         name: 'ListadoBruto',
-//     }
-// ]

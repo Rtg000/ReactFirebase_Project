@@ -7,6 +7,7 @@ import { Header, Main } from './barril';
 import { Ruticas } from './routes';
 import {Route,Routes} from 'react-router-dom'
 import { ListadoBruto } from './Pages/ListadoBruto/ListadoBruto';
+import { Home } from './Pages/Home/Home';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Main/>}>
+          <Route path='/' element={<Home/>}/>
           {
             Ruticas.map((route) => (
               <Route
