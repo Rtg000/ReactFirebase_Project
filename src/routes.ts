@@ -6,7 +6,8 @@ import { SobreNosotros } from "./Pages/SobreNosotros/SobreNosotros";
 import { Jugadores } from "./Pages/Jugadores/Jugadores";
 import { Home } from "./Pages/Home/Home";
 import { Torneos } from "./Pages/Torneos/Torneos";
-import Raqueta from './Img/RaquetaTennis.png';
+import ImgJugadores from './Img/TheBig3.png';
+import ImgJugadoras from './Img/3WTA.png';
 import Trofeo from './Img/Trofeo.png';
 import { Jugadoras } from "./Pages/Jugadoras/Jugadoras";
 import { Login } from "./Pages/Header/Login/Login";
@@ -67,12 +68,12 @@ export const MenuInicio = [
         path: 'Jugadores',
         component: Jugadores,
         name: 'Jugadores',
-        imagen: Raqueta
+        imagen: ImgJugadores
     },
     {
         path: 'Jugadoras',
         component: Jugadoras,
         name: 'Jugadoras',
-        imagen: Raqueta
+        imagen: ImgJugadoras
     }
 ]

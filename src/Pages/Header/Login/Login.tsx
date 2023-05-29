@@ -3,6 +3,7 @@ import { Ruticas } from "../../../routes"
 import path from "path"
 import { ListadoBruto } from "../../ListadoBruto/ListadoBruto"
 import { NavLink, useNavigate } from "react-router-dom";
+import './Login.css';
 
 export const Login = () => {
     let navigate = useNavigate(); 

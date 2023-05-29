@@ -30,7 +30,7 @@ main>section>nav{
     flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 main>section>nav>a{
@@ -38,20 +38,20 @@ main>section>nav>a{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
-    width: 47%;
+    width: 49%;
     text-align: center;
     text-decoration: none;
     color: black;
     /* padding: 120px 50px; */
     background-color: rgb(240,240,240);
     border-radius: 10px;
-    font-size: 50pt;
+    font-size: 48pt;
 }
 
 main>section>nav>a>img{
-    width: 130px;
+    width: 210px;
     /* max-width: 100px; */
-    height: 160px;
+    height: 170px;
 }
 
 main>section{
@@ -152,12 +152,20 @@ main>section{
     .TarjetaImg>.ImgJugadoras{
         max-width: 210px;
     }
-    main>nav>a{
-        font-size: 25pt;
+    main>section>nav{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 15px;
+        margin: auto;
     }
-    main>nav>a>img{
-        width: 90px;
-        height: 100px;
+    main>section>nav>a{
+        width: 100%;
+        font-size: 35pt;
+    }
+    main>section>nav>a>img{
+        width: 140px;
+        height: 120px;
     }
 }
 
@@ -179,9 +187,24 @@ main>section{
         max-width: 125px;
     }
     .TarjetaImg>.ImgJugadores{
-        max-width: 140px;
+        max-width: 130px;
     }
     .TarjetaImg>.ImgJugadoras{
         max-width: 210px;
+    }
+    main>section>nav{
+        /* display: flex;
+        flex-flow: row wrap; */
+        justify-content: center;
+        gap: 15px;
+        margin: auto;
+    }
+    main>section>nav>a{
+        /* width: 100%; */
+        font-size: 35pt;
+    }
+    main>section>nav>a>img{
+        width: 130px;
+        height: 120px;
     }
 }
