@@ -43,14 +43,14 @@ main>section>nav>a{
     text-decoration: none;
     color: black;
     /* padding: 120px 50px; */
-    background-color: rgb(240,240,240);
+    background-color: rgb(245,245,245);
     border-radius: 10px;
     font-size: 48pt;
     height: 250px;
 }
 
 main>section>nav>a>img{
-    width: 240px;
+    width: 250px;
     /* max-width: 100px; */
     height: 220px;
 }
@@ -83,7 +83,7 @@ main>section{
     gap: 12px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240,240,240);
+    background-color: rgb(245,245,245);
     margin: 10px 5px;
     padding: 10px;
     width: 30%;
