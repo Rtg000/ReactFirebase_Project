@@ -61,7 +61,7 @@ td>img{
     /* height: 80px; */
 }
 
-.FormAñadirJugadores{
+.FormAñadirDocumento{
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
@@ -76,15 +76,6 @@ td>img{
     border-radius: 10px;
 }
 
-/* #BotonCargaJugadores{
-    margin: 10px 0px 0px 10px;
-} */
-
-/* form>button{
-    width: 80%;
-    padding: 20px;
-} */
-
 @media (min-width: 0px) and (max-width: 599px) {
     td{
         padding: 5px;
@@ -93,6 +84,9 @@ td>img{
     td>img{
         width: 40px;
         /* height: 80px; */
+    }
+    .FormAñadirDocumento{
+        width: 70%;
     }
 }
 

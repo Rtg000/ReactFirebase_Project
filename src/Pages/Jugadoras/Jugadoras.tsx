@@ -18,16 +18,15 @@ export const Jugadoras = () => {
 
     const { register, handleSubmit } = useForm<IJugadora>();
     
-    const onAddJugadora = async ( dataJugador: IJugadora ) => {
+    const onAddJugadora = async ( data: IJugadora ) => {
         console.log('Enviando...')
-        // console.log(dataJugador)
-        addJugadora(dataJugador)
+        await addJugadora(data)
+        window.location.reload();
     }
 
     return(
         <>
             <Button variant="contained" onClick={cargarJugadoras}>Cargar datos</Button>
-            {/* <button className="BotonCargarDatos" onClick={cargarJugadoras}>CARGAR DATOS</button> */}
             <section>
                 {
                 jugadoras.sort((a,b) => (a.name > b.name)?1:((b.name > a.name)?-1:0)).map((Jugadora) => (
@@ -45,54 +44,54 @@ export const Jugadoras = () => {
                 ))
                 }
             </section>
-            <Grid container sx={{padding: '10px', width: '100%', display: 'flex'}}>
-                <Grid item xs={5.8} md={4}>
-                    <Card sx={{bgcolor: '#fef'}}>
-                        <form onSubmit={handleSubmit(onAddJugadora)} noValidate>
-                            <CardHeader title='Inserción de Categorías' sx={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}/>
-                            <CardContent>
-                                {/* <form> */}
-                                    <TextField
-                                        {...register('name')}
-                                        id='nombre'
-                                        label='Nombre'
-                                        type="string"
-                                        sx={{width: '100%'}}
-                                        InputLabelProps={{}}
-                                        
-                                    />
-                                    <TextField
-                                        {...register('edad')} 
-                                        label='Edad'
-                                        type='number'
-                                        sx={{width: '100%'}}
-                                    />
-                                    <TextField
-                                        {...register('nacionalidad')} 
-                                        label='Pais de origen'
-                                        type='string'
-                                        sx={{width: '100%'}}
-                                    />
-                                    <TextField
-                                        {...register('gs_ganados')} 
-                                        label='Grand Slams ganados'
-                                        type='number'
-                                        sx={{width: '100%'}}
-                                    />
-                                    <TextField
-                                        {...register('imagen')} 
-                                        label='Imagen (URL)'
-                                        type='string'
-                                        sx={{width: '100%'}}
-                                    />
-                            </CardContent>
-                            <CardActions>
-                                <Button type='submit' color='primary' className="circular-btn" variant='contained'>Add Jugador</Button>
-                            </CardActions>
-                        </form>
-                    </Card>
-                </Grid>
-            </Grid>            
+            <form className="FormAñadirDocumento" onSubmit={handleSubmit(onAddJugadora)} noValidate>
+                <h1>Añadir Jugadoras</h1>
+                <TextField
+                    {...register('id')}
+                    id='id'
+                    label='id'
+                    type="string"
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}} 
+                />
+                <TextField
+                    {...register('name')}
+                    id='nombre'
+                    label='Nombre'
+                    type="string"
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('edad')} 
+                    label='Edad'
+                    type='number'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('nacionalidad')} 
+                    label='Pais de origen'
+                    type='string'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('gs_ganados')} 
+                    label='Grand Slams ganados'
+                    type='number'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('imagen')} 
+                    label='Imagen (URL)'
+                    type='string'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <Button type='submit' color='primary' className="circular-btn" variant='contained' style={{width: "80%"}}>Add Jugadora</Button>
+            </form>
         </>
     )
 }

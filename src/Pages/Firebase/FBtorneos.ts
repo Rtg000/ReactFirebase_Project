@@ -10,7 +10,7 @@ export const app = initializeApp(firebaseConfig);
 
 export const addTorneo = async (data: ITorneo) => {
     try{
-        const docRef = doc(getFirestore(),"Torneos",nanoid(20));
+        const docRef = doc(getFirestore(),"Torneos",data.id);
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)

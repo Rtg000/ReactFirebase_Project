@@ -58,9 +58,9 @@ export const ListadoBruto = () => {
                 ))
                 }
             </table>
-                <form className="FormAñadirJugadores" onSubmit={handleSubmit(onAddJugador)} noValidate>
-                    <h1>Añadir Jugadores</h1>
-                    <TextField
+            <form className="FormAñadirDocumento" onSubmit={handleSubmit(onAddJugador)} noValidate>
+                <h1>Añadir Jugadores</h1>
+                <TextField
                         {...register('id')}
                         id='id'
                         label='id'

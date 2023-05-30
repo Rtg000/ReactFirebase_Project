@@ -10,7 +10,7 @@ export const app = initializeApp(firebaseConfig);
 
 export const addJugadora = async (data: IJugadora) => {
     try{
-        const docRef = doc(getFirestore(),"Jugadoras",nanoid(20));
+        const docRef = doc(getFirestore(),"Jugadoras",data.id);
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)

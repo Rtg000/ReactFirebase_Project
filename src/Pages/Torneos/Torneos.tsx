@@ -16,10 +16,12 @@ export const Torneos = () => {
         })
     },[])
 
-    const onAddTorneo = async ( dataTorneo: ITorneo ) => {
+    const { register, handleSubmit } = useForm<ITorneo>();
+    
+    const onAddTorneo = async ( data: ITorneo ) => {
         console.log('Enviando...')
-        // console.log(dataTorneo)
-        addTorneo(dataTorneo)
+        await addTorneo(data)
+        window.location.reload();
     }
 
     return(
@@ -42,6 +44,47 @@ export const Torneos = () => {
                 ))
                 }
             </section>
+            <form className="FormAñadirDocumento" onSubmit={handleSubmit(onAddTorneo)} noValidate>
+                <h1>Añadir Torneos</h1>
+                <TextField
+                    {...register('id')}
+                    id='id'
+                    label='id'
+                    type="string"
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}} 
+                />
+                <TextField
+                    {...register('name')}
+                    id='nombre'
+                    label='Nombre'
+                    type="string"
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('puntos')} 
+                    label='Puntos'
+                    type='number'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('superficie')} 
+                    label='Superficie'
+                    type='string'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <TextField
+                    {...register('logo')} 
+                    label='Logo (URL)'
+                    type='string'
+                    sx={{width: '100%'}}
+                    InputLabelProps={{}}                 
+                />
+                <Button type='submit' color='primary' className="circular-btn" variant='contained' style={{width: "80%"}}>Add Torneo</Button>
+            </form>
         </>
     )
 }
