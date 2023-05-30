@@ -3,29 +3,27 @@
     align-self: center;
     justify-self: center;
     flex-flow: column nowrap;
-    gap: 30px;
+    gap: 35px;
     align-items: center;
     justify-content: center;
     background-color: rgb(240,240,240);
     margin: 15px;
     padding: 30px;
-    width: 40%;
+    width: 55%;
     border-radius: 10px;
 }
 
 #ButtonLogin{
     width: 65%;
-    padding: 10px;
+    padding: 13px;
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
     .FormLogin{
-        width: 65%;
+        width: 60%;
     }
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
-    .FormLogin{
-        width: 60%;
-    }
+
 }

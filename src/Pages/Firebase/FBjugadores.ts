@@ -8,11 +8,9 @@ import jugadores from "./data/jugadores.json";
 
 export const app = initializeApp(firebaseConfig);
 
-export const db=getFirestore();
-
 export const addJugador = async (data: IJugador) => {
     try{
-        const docRef = doc(getFirestore(),"Jugadores",nanoid(20));
+        const docRef = doc(getFirestore(),"Jugadores",data.id);
         await setDoc(docRef,data)
     }catch(error){
         console.log(error)
@@ -45,22 +43,9 @@ export const getJugadores = async ():Promise<IJugador[]> => {
     return jugadores
 }
 
-export const id=nanoid(20);
-
-// export const borrarJugador = async () => {
-//     try{
-//         console.log("Test Borrado")
-//         const docRef = doc(getFirestore(),"Jugadores",id);
-//         await deleteDoc(docRef)
-//     }catch(error){
-//         console.log(error)
-//     }
-// }
-
 export const borrarJugador = async (id: string) => {
     try{
         console.log("TestBorrado")
-        // const docRef = doc(getFirestore(),"Jugadores",id);
         const docRef = doc(getFirestore(),"Jugadores",id);
         await deleteDoc(docRef);
         window.location.reload();
